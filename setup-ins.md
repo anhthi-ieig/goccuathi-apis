@@ -19,8 +19,14 @@
     - global
       - constants.js
 
-    - [index.js]
+    - [main.js]
     - [.babelrc]
     - [.eslintrc]
     - [.eslintignore]
     - [jsconfig.json]
+
+# 3. Setup Webpack
+  - `npm i webpack webpack-cli webpack-node-externals -D`
+  - Implement [app-path.config.js]
+  - Implement [webpack.config.js]
+  - Add `start` and `build` commands to [package.json]
