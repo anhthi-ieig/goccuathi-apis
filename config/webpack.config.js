@@ -6,10 +6,22 @@ module.exports = {
   entry: appPath.main,
   output: {
     path: appPath.publicDir,
-    filename: 'main.js'
+    filename: 'index.js'
   },
   target: 'node',
   externals: [
     webpackNodeExternals()
   ],
+  optimization: {
+    minimize: false
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      }
+    ]
+  }
 };
