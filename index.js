@@ -1,10 +1,3 @@
-class Hello {
-  static age = 5;
+import { saySomeThing } from 'global/constants';
 
-  saySomething = () => {
-    console.log('Hi! Nice to meet you');
-  }
-}
-
-const hello = new Hello();
-hello.saySomething();
+saySomeThing();

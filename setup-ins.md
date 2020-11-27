@@ -27,7 +27,7 @@
     - [.env]
 
 # 3. Setup Webpack
-  - `npm i webpack webpack-cli webpack-node-externals -D`
+  - `npm i webpack webpack-cli webpack-node-externals nodemon-webpack-plugin -D`
   - Implement [app-path.config.js]
   - Implement [webpack.config.js]
   - Add `start` and `build` commands to [package.json]
@@ -52,3 +52,8 @@
   - `babel-eslint`: allows you to lint ALL valid Babel code with ESLint
   - `eslint-config-airbnb-base`: an extensible shared config from Airbnb.
   - `eslint-plugin-import`: required by `eslint-config-airbnb-base`
+  - Grant ESLint permission by clicking ESLint icon on the bottom right
+
+# 6. Path Resolver
+  - `npm i babel-plugin-module-resolver -D`
+  - Update [.babelrc]

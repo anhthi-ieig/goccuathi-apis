@@ -1,8 +1,7 @@
 {
   "parser": "babel-eslint",
   "extends": [
-    "airbnb-base",
-    "eslint:recommended"
+    "airbnb-base"
   ],
   "parserOptions": {
     "ecmaVersion": 6,
@@ -12,6 +11,9 @@
     "node": true,
     "es6": true
   },
+  "ignorePatterns": [
+    "public/*.js"
+  ],
   "rules": {
     "max-len": [
       "error",
@@ -26,5 +28,18 @@
     "import/prefer-default-export": "off",
     "no-console": "off",
     "semi": "error"
-  }
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ],
+        "extensions": [
+          ".js"
+        ]
+      }
+    }
+  },
 }
