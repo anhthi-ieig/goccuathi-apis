@@ -35,11 +35,20 @@
 # 4. Setup Babel
   - `npm i @babel/core @babel/node @babel/plugin-transform-modules-commonjs @babel/plugin-proposal-class-properties babel-loader -D`
   - Implement [.babelrc]
-  - Add `babel-loader` to [webpack.config.js]
+  - Add `babel-loader` to [webpack.config.js] module rules
 
   [Reference]
   - `@babel/node`: works the same as the Node.js CLI, compile with Babel presets and plugins before running
   - `@babel/plugin-transform-modules-commonjs`:  transforms ECMAScript modules to CommonJS
   - `@babel/plugin-proposal-class-properties`: allow to define properties in class
 
-# 
+# 5. Setup ESLint
+  - `npm i eslint babel-eslint eslint-loader eslint-config-airbnb-base eslint-plugin-import -D`
+  - Implement [.eslintrc]
+  - Add `eslint-loader` to [webpack.config.js] module rules
+  - Add `lint` and `lint:fix` commands to [package.json]
+
+  [Reference]
+  - `babel-eslint`: allows you to lint ALL valid Babel code with ESLint
+  - `eslint-config-airbnb-base`: an extensible shared config from Airbnb.
+  - `eslint-plugin-import`: required by `eslint-config-airbnb-base`
