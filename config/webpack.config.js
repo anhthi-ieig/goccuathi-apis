@@ -1,5 +1,7 @@
 const NodemonPlugin = require('nodemon-webpack-plugin');
 const NodeExternals = require('webpack-node-externals');
+const Dotenv = require('dotenv-webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const appPath = require('./app-path.config');
 
@@ -8,6 +10,8 @@ const appPath = require('./app-path.config');
  */
 
 const nodemonPlugin = new NodemonPlugin();
+const cleanPlugin = new CleanWebpackPlugin();
+const dotenv = new Dotenv();
 
 /**
  * Config
@@ -21,7 +25,9 @@ module.exports = {
   },
   target: 'node',
   plugins: [
-    nodemonPlugin
+    nodemonPlugin,
+    cleanPlugin,
+    dotenv
   ],
   externals: [
     new NodeExternals()

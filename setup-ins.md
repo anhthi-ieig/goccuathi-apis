@@ -22,7 +22,6 @@
     - [main.js]
     - [.babelrc]
     - [.eslintrc]
-    - [.eslintignore]
     - [jsconfig.json]
     - [.env]
 
@@ -57,3 +56,8 @@
 # 6. Path Resolver
   - `npm i babel-plugin-module-resolver -D`
   - Update [.babelrc]
+  - Implement [jsconfig.json]
+  - Add `import/resolver` to [.eslintrc] settings
+
+# 7. Install dotenv-webpack, clean-webpack-plugin
+  - `npm i dotenv-webpack clean-webpack-plugin -D`
