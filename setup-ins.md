@@ -66,3 +66,6 @@
   - `npm i mongoose express joi`
   - Add `DB_ADDRESS` and `PORT` to [.env]
   - Implement [index.js]
+
+# 9. Install utils libs
+  - `npm i body-parser cors lodash helmet moment`
