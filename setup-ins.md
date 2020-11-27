@@ -61,3 +61,8 @@
 
 # 7. Install dotenv-webpack, clean-webpack-plugin
   - `npm i dotenv-webpack clean-webpack-plugin -D`
+
+# 8. Install Mongoose, Express, Joi
+  - `npm i mongoose express joi`
+  - Add `DB_ADDRESS` and `PORT` to [.env]
+  - Implement [index.js]
