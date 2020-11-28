@@ -32,7 +32,7 @@
   - Add `start` and `build` commands to [package.json]
 
 # 4. Setup Babel
-  - `npm i @babel/core @babel/node @babel/plugin-transform-modules-commonjs @babel/plugin-proposal-class-properties babel-loader -D`
+  - `npm i @babel/core @babel/node babel-loader -D`
   - Implement [.babelrc]
   - Add `babel-loader` to [webpack.config.js] module rules
 

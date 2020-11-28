@@ -1,12 +1,13 @@
 # 1. Using PWA
 # 2. Using React Hooks
-# 3. Using Cloudfront
-# 4. Using Redis
-# 5. Upload files to S3
-# 6. Real-time with socket.io
-# 7. Apply CI/CD using Github Actions
-# 8. Deploy to Amazon Lightsail, routing with NGINX
-# 9. Sign in via Google, Facebook using Google Oauth2 API
-# 0. Apply best practice for responsible layout
-# 11. Improve project setup and structure
-# 12. Using TTD for Unit Test
+# 3. Using Immutability
+# 4. Using Cloudfront
+# 5. Using Redis
+# 6. Upload files to S3
+# 7. Real-time with socket.io
+# 8. Apply CI/CD using Github Actions
+# 9. Deploy to Amazon Lightsail, routing with NGINX
+# 10. Sign in via Google, Facebook using Google Oauth2 API
+# 11. Apply best practice for responsible layout
+# 12. Improve project setup and structure
+# 13. Using TTD for Unit Test
